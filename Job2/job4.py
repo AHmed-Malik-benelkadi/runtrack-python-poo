@@ -49,7 +49,7 @@ student1 = student("Kololo", "Gavi", 53749)
 student1.add_credits(10)
 student1.studentInfo()
 
-student2 = student("John", "Doe", 53749)
+student2 = student("John", "Doe", 145)
 student2.add_credits(100)
 student2.studentInfo()
 
