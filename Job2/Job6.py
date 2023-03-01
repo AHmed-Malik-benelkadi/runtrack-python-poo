@@ -1,10 +1,10 @@
-from dataclasses import dataclass
 
-@dataclass
 class commande():
-    __num_commande: int
-    __liste_plats_commandes: dict
-    __statut_commande: str
+
+    def __init__(self, num_commande, liste_plats_commandes, statut_commande):
+        self.__num_commande = num_commande
+        self.__liste_plats_commandes = liste_plats_commandes
+        self.__statut_commande = statut_commande
 
     def ajouter_plat(self, plat, prix):
         self.__liste_plats_commandes[plat] = prix
