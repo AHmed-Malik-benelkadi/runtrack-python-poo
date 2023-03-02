@@ -18,11 +18,10 @@ class ListeDeTaches():
     def marquer_commefini(self,tache):
         tache.status = "fini"
     def afficherListe(self):
-        """qui permet de retourner une liste de toutes les taches."""
+
         return self.taches
 
-    """qui permet de filtrer les taches par rapport à un statut et retourne
-cette liste."""
+
     def filtrerListe(self,status):
         liste = []
         for tache in self.taches:
@@ -34,17 +33,17 @@ cette liste."""
         return "taches: "+str(self.taches)
 
 
-Tache1 = Tache("manger","description1","en cours")
-Tache2 = Tache("dormir","description2","en cours")
-Tache3 = Tache("travailler","description3","en cours")
-Tache4 = Tache("sport","description4","en cours")
-Tache5 = Tache("voyager","description5","en cours")
+Tache1 = Tache("manger","Je doit manger ce soir ","Fini")
+Tache2 = Tache("dormir","Aprés avoir manger je doit dormir ","en cours")
+Tache3 = Tache("travailler","Puis le lendemain je doit aller au travaille ","en cours")
+Tache4 = Tache("sport","Aprés le travaille je doit aller a la salle de sport ","en cours")
+Tache5 = Tache("voyager","Apres de mois de travaille je merite un voyage ","en cours")
 
 liste = [Tache1,Tache2,Tache3,Tache4,Tache5]
 listeDeTaches = ListeDeTaches(liste)
 for tache in listeDeTaches.afficherListe():
     print(tache)
-listeDeTaches.ajouterTache(Tache("titre6","description6","en cours"))
+listeDeTaches.ajouterTache(Tache("Repos","Et puis je doit me reposé","en cours"))
 for tache in listeDeTaches.afficherListe():
     print(tache)
 
@@ -54,6 +53,6 @@ for tache in listeDeTaches.afficherListe():
 listeDeTaches.marquer_commefini(Tache2)
 for tache in listeDeTaches.afficherListe():
     print(tache)
-print(listeDeTaches.filtrerListe("fini"))
+print(listeDeTaches.filtrerListe("fini ! "))
 
 #
