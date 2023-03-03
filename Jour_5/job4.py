@@ -1,4 +1,3 @@
-# Écrire une fonction récursive permettant de retourner le plus grand chiffre d’une liste.
 
 def max_liste(liste):
     if len(liste) == 1:

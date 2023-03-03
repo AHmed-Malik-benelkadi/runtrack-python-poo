@@ -1,6 +1,4 @@
 def factorielle(n):
-    # doit etre positive
-
     if n < 0:
         return "Erreur le nombre doit etre positif"
     elif n == 0:
